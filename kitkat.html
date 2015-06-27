@@ -1,0 +1,131 @@
+<html>
+<head>
+<style>
+@keyframes outeranim
+{
+0%
+{
+background-color:black;;
+transform: rotate(30deg);
+}
+50%
+{
+background-color:white;
+transform: rotate(60deg);
+}
+100%
+{
+background-color:black;
+transform: rotate(90deg);
+}
+}
+@keyframes inner1anim
+{
+0%
+{
+background-color:white;
+transform: rotate(30deg);
+}
+50%
+{
+background-color:black;
+transform: rotate(60deg);
+}
+100%
+{
+background-color:white;
+transform: rotate(90deg);
+}
+}
+@keyframes inner2anim
+{
+0%
+{
+background-color:black;;
+transform: rotate(30deg);
+}
+50%
+{
+background-color:white;
+transform: rotate(60deg);
+}
+100%
+{
+background-color:black;
+transform: rotate(90deg);
+}
+}
+@keyframes inner3anim
+{
+0%
+{
+background-color:white;
+transform: rotate(30deg);
+}
+50%
+{
+background-color:black;
+transform: rotate(60deg);
+}
+100%
+{
+background-color:white;
+transform: rotate(90deg);
+}
+}
+#outer
+{
+position:relative;
+margin:0 auto;
+top:250px;
+height:200px;
+width:200px;
+background-color:black;
+border:2px solid white;
+animation:outeranim 10s;
+}
+#inner1
+{
+position:absolute;
+top:50px;
+left:50px;
+height:100px;
+width:100px;
+background-color:white;
+animation:inner1anim 8s;
+
+}
+#inner2
+{
+position:absolute;
+height:50px;
+left:75px;
+top:75px;
+width:50px;
+background-color:black;
+animation:inner2anim 6s;
+}
+#inner3
+{
+position:absolute;
+height:25px;
+width:25px;
+background-color:white;
+left:87.5px;
+top:87.5px;
+animation:inner3anim 9s;
+}
+
+
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="inner1"></div>
+<div id="inner2">
+</div>
+<div id="inner3">
+</div>
+</div>
+</body>
+</html>

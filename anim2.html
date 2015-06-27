@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>my animation 2</title>
+<script>
+var name=prompt("what is your name");
+var ans=confirm("are you sure you are"+" "+name);	
+alert("you are gone"+" "+name);
+</script>
+<style>
+@keyframes myanimation
+{
+0%
+{
+background-color:white;
+color:black;
+}
+25%
+{
+transform:translate(500px) rotate(30deg);
+background-color:red;
+color:blue;
+}
+50%
+{
+transform:rotate(55deg) ;
+}
+100%
+{
+
+}
+}
+#anime
+{
+height:200px;
+width:200px;
+background-color:black;
+color:white;
+text-align:center;
+font-size:40px;
+animation:myanimation 5s;
+
+
+}
+
+</style>
+</head>
+<body>
+<div id="anime">
+<p>animation</p>
+</div>
+</body>
+</html>

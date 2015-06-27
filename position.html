@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>absolute position</title>
+<style>
+body
+{
+background-image:url(batman.jpg);
+background-attachment:fixed;
+}
+#content
+{
+position:relative;
+height:500px;
+width:750px;
+background-color:#369;
+margin: 15px auto;
+}
+#first
+{
+position:absolute;
+width:250px;
+height:250px;
+text-align:center;
+background-color:#ccf;
+float:left;
+
+}
+#second
+{
+position:absolute;
+top:0;
+left:250px;
+width:250px;
+height:300px;
+text-align:center;
+background-color:#fcc;
+background-color:rgba(250,250,250,0.5);
+float:left;
+}
+#third
+{
+position:absolute;
+width:250px;
+height:250px;
+top:0;
+left:500px;
+text-align:center;
+background-color:#cff;
+
+}
+
+</style>
+</head>
+<body>
+<div id="content">
+<div id="first">
+<p class="par">This is the first box</p>
+</div>
+<div id="second">
+<p>this is the second box</p>
+</div>
+<div id="third">
+<p>this is the third class</p>
+</div>
+</div>
+</body>
+</html>

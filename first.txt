@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<style>
+body{
+background-color:white;
+}
+body:hover
+{
+background-color:black;
+}
+#test
+{
+	position:absolute;
+	background-color:white;
+	height:100px;
+	width:100px;
+	left:45%;
+	top:250px;
+    transition:width 3s , height 3s , transform 3s ;
+	border:10px solid black;
+
+	
+
+}
+#test:hover
+{
+width:200px;
+height:200px;
+background-color:black;
+border:10px solid white;
+transform:scale(3.0) rotate(34deg);
+color:white;
+
+}
+#test p{
+text-align:center;
+font-size:45px;
+}
+</style>
+</head>
+
+<body>
+<div id="test">
+<p>Gone</p>
+</div>
+</body>
+</html>

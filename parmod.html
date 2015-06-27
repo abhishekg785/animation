@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+body
+{
+	position:relative;
+}
+@keyframes anime
+{
+	0%
+	{
+	}
+	50%
+	{
+		background-color:#cff;
+	}
+	100%
+	{
+		background-color:#ccf;
+	}
+}
+#Square
+{
+	position:absolute;
+background-color:#fcc;
+height:200px;
+width:200px;
+border:2px solid black;
+transition:width 4s ,transform 5s;
+animation:anime 5s;
+top:300px;
+
+
+}
+#Square:hover
+{
+	border:2px solid black;
+	
+width:400px;
+transform:rotate(45deg) scale(2);
+}
+#Square p
+{
+	text-align:center;
+	font-size:30px;
+}
+</style>
+</head>
+<body>
+<div id="Square">
+<p>Bcoz i m happy</p>
+</div>
+</body>
+</html>

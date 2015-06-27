@@ -1,0 +1,52 @@
+<html>
+<head>
+
+<style>
+#ram
+{
+background-color:white;
+height:200px;
+border:1px solid black;
+text-align:center;
+color:white;
+}
+#ram p
+{
+font-size:50px;
+}
+#box
+{
+height:200px;
+width:200px;
+background-color:#ccf;
+transition:transform 3s;
+}
+#box:hover
+{
+transparent();
+}
+</style>
+</head>
+<body>
+<div id="ram">
+<p>hello everyone<p>
+</div>
+<div id="box">
+
+</div>
+<script>
+var backcol=prompt("enter the background color");
+
+var col=prompt("enter the text color");
+var abhi=document.getElementById("ram");
+abhi.style.backgroundColor=backcol;
+abhi.style.color=col;
+function transparent()
+{
+var boxjs=document.getElementById("box");
+transform:rotate(30deg);
+}
+
+</script>
+</body>
+</html>

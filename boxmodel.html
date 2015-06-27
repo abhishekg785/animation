@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>box model</title>
+<style>
+body{
+background-image:url(hiro.jpg);
+background-attachment:fixed;
+padding:200px;`	
+}
+div#content{
+    width:800px;
+	padding: 10px;
+	margin:auto;
+    background-color: #f8f8f8;
+	-moz-background-color:250,250,250,0.50;
+    border: 1px solid black;
+}
+div#boxText{
+float:left;
+height:200px;
+width:200px;
+background-color:blue;
+}
+div#boxText p{
+text-align:center;
+margin-top:85px;
+}
+p.clear {
+    clear: both;
+    height: 0;  
+    margin: 0;
+    padding: 0;
+}
+div#i {
+float:left;
+height:200px;
+width:200px;
+background-color:gray;
+}
+div#i p{
+text-align:center;
+margin-top:85px;
+}
+div#am {
+float:left;
+height:200px;
+width:200px;
+background-color:green;
+}
+div#am p{
+text-align:center;
+margin-top:85px;
+}
+div#abhishek {
+float:left;
+height:200px;
+width:200px;
+background-color:red;
+}
+div#abhishek p{
+text-align:center;
+margin-top:85px;
+}
+
+</style>
+</head>
+<body>
+<div id="content">
+<div id="boxText">
+<p>hello world</p>
+</div>
+<div id="i">
+<p>I</p>
+</div>
+<div id="am">
+<p>AM</p>
+</div>
+<div id="abhishek">
+<p>ABHISHEK</p>
+</div>
+
+<p class="clear" />
+</div>
+</body>
+</html>

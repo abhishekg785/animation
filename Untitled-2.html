@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+#pattern
+{
+height:500px;
+width:500px;
+background-color:#fcc;
+transform:rotate(-90deg);
+
+}
+</style>
+</head>
+
+<body>
+<div id="pattern">
+<p>fdshgfdsjgfkdghkdf</p>
+</div>
+<script>
+var id=document.getElementById("pattern");
+var x=prompt("enter the limit");
+var fib=[0,1];
+for(var i=2;i<x;i++)
+{
+	fib.push(fib[i-1]+fib[i-2]);
+	
+}
+for(var i=0;i<x;i++)
+{
+	for(var j=0;j<fib[i];j++)
+	{
+	
+		
+	}
+	document.write("<br/>");
+}
+
+</script>
+</body>
+</html>

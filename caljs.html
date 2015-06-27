@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<input type="text" id="a" value="0"/>
+<input type="text" id="b" value="0"/>
+<button onclick="add()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+<div id="ans"></div>
+
+<script>
+
+function add()
+{
+var first=document.getElementById("a").value;
+var second=document.getElementById("b").value;
+var res=document.getElementById("ans");
+first=parseInt(first);
+second=parseInt(second);
+console.log(first);
+console.log(second);
+res.innerHTML=first+second;
+
+}
+
+function minus()
+{
+var first=document.getElementById("a").value;
+var second=document.getElementById("b").value;
+var res=document.getElementById("ans");
+first=parseInt(first);
+second=parseInt(second);
+console.log(first);
+console.log(second);
+res.innerHTML=first-second;
+}
+function mul()
+{
+var first=document.getElementById("a").value;
+var second=document.getElementById("b").value;
+var res=document.getElementById("ans");
+first=parseInt(first);
+second=parseInt(second);
+console.log(first);
+console.log(second);
+res.innerHTML=first*second;
+}
+function div()
+{
+var first=document.getElementById("a").value;
+var second=document.getElementById("b").value;
+var res=document.getElementById("ans");
+first=parseInt(first);
+second=parseInt(second);
+console.log(first);
+console.log(second);
+res.innerHTML=first/second;
+}
+
+
+</script>
+<input type="text" name="a12" value="0"/>
+<button onclick="name_fun()">ok</button>
+<script>
+function name_fun(){
+var var1=document.getElementsByName("a12");
+var res=document.getElementById("ans");
+res.innerHTML=var1[0].value;
+}
+</script>
+</body>
+</html>

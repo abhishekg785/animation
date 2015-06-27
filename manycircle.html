@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>
+my circles
+</title>
+<style>
+#outer
+{
+position:relative;
+background-color:#fcc;
+height:400px;
+width:500px;
+}
+#c1
+{
+height:100px;
+width:100px;
+border-radius:50%;
+background-color:#cff;
+position:absolute;
+left:150px;
+}
+#c1:hover
+{
+
+}
+#c{
+height:40px;
+width:40px;
+background-color:black;
+border-radius:50%;
+}
+#c2{
+height:40px;
+width:40px;
+background-color:#fcc;
+border-radius:50%;
+}
+#c3{
+height:40px;
+width:40px;
+background-color:red;
+border-radius:50%;
+}
+</style>
+</head>
+<body>
+<div id="outer" >
+<div id="c1" onMouseOver="colorfun()">
+</div>
+<div id="c2">
+</div>
+<div id="c3">
+</div>
+<div id="c">
+</div>
+<div id="c">
+</div>
+<div id="c">
+</div>
+</div>
+<script>
+
+function colorfun()
+{
+var circleid=document.getElementById("c2");
+var circleid1=document.getElementById("c3");
+circleid.style.height=30+'px';
+circleid1.style.height=30+'px';
+
+}
+</script>
+</body>
+</html>
